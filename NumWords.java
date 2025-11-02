@@ -2,5 +2,14 @@
 public class NumWords {
 	public static void main(String args[]) {
 	    // Replace this comment with your code
+		int number = Integer.parseInt(args[0]);
+		int hundreds = number / 100;
+		int tens = (number / 10) % 10;
+		int ones = number % 10;
+
+		//5 hundreds, 1 tens, and 7 ones.
+		System.out.println( hundreds + " hundreds, " + tens + " tens, and " 
+		+ ones + " ones.");
 	}
 }
+ 
